@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 4px;
+    overflow-x: hidden;
+    
+}
+
+/* Inicio Menu de navegação*/
+li, a, button {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 1%;
+    padding-top: 7px;
+}
+
+.logo {
+    width: 80%;
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgb(0, 255, 85);
+}
+
+#bHome{
+    width: 5%;
+    margin-left: 0%;
+}
+
+#mode {
+    padding: 9px 15px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+#mode:hover{
+    background-color:#000000;
+    color: white;
+
+}
+
+.navicon {
+    width: 16%;
+    margin-bottom: 0%;
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right: 2%;
+}
+
+/* Fim do Menu de navegação*/
+ 
+/* Inicio Página index*/
+#titulo-index span{
+    color: rgb(0, 255, 85);
+    margin-top: 0px;
+}
+
+#biglogo{
+    margin-left: 73%;
+    margin-top: 0%;
+    position: absolute;
+    top: 20%;
+}
+
+#titulo-index {
+    position: absolute;
+    width: 100%;
+    font-size: 80px;
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#text-index {
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+    font-size: 25px;
+    top: 10%;
+    margin-left: 20px;
+}
+
+#palavraverde{
+    color: rgb(0, 255, 85);
+}
+/* Fim menu principal */
+
+/* Formatação de titulos e textos */
+#titulo-principal{
+    font-size: 100px;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: rgb(0, 255, 85);
+    background-color: #00000000;
+}
+
+#content-principal {
+    font-size: 25px;
+    width: 45%;
+    margin-left: 5%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #00000000;
+}
+
+#content{
+    background-color: rgb(233, 233, 233);
+}
+#section {
+    background-image: url('https://t4.ftcdn.net/jpg/05/21/18/03/360_F_521180377_2iAVJqBQSo3cgKaVp8vMBR8asrC61DoU.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1%;
+    width: 100%;
+    height: 100vh;
+}
+
+#titulo-inicial{
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 0px;
+    font-size: 75px;
+    margin-left: 5%;
+    color:rgb(0, 255, 85);
+    background-color: #00000000;
+}
+
+#titulo-secundario{
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 0px;
+    font-size: 40px;
+    margin-left: 5%;
+    color:rgb(0, 255, 85);
+    background-color: #00000000;
+}
+
+#content-secundario{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    width: 75%;
+    background-color: #00000000;
+}
+
+#tabela {
+    margin-top: 3%;
+    background-color: rgb(233, 233, 233);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#tabela #assunto-tabela{
+    font-size: 32px;
+    background-color: rgb(233, 233, 233);
+    padding-right: 0vh;
+    padding-top: 3vh;
+    color: purple;
+    width: 25%;
+    
+
+}
+
+#tabela #content-tabela{
+    padding-top: 3vh;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+
+}
+
+#subtitulos{
+    font-size: 25px;
+    background-color: #00000000;
+    margin-top: 2%;
+    margin-left: 10%;
+    color: purple;
+    width: 25%;
+}
+
+#content-subtitulos{
+    font-size: 20px;
+    background-color: #00000000;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 75%;
+
+}
+
+#content-decoration{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20px;
+    color: purple;
+    width: 75%;
+    background-color: #00000000;
+}
+
+
+/* 
+#contentinvestimento{
+    margin-top: 55px;
+    margin-left: 20px;
+    width: 45%;
+    font-size: 20px;
+   
+}
+
+#tituloinvestimento{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 60px;
+    margin-left: 20px;
+    color:rgb(0, 255, 85);
+}
+
+#objetivos{
+    margin-top: 20px;
+    color: rgb(0, 255, 85);
+    font-size: 30px;
+}
+
+#paragrafoinvestimento1{
+    margin-top: 10px;
+}
+
+*/
