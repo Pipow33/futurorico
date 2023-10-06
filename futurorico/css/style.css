@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 4px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-y:scroll;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Inicio Nav Bar*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 1%;
+    padding-top: 7px;
+}
+nav ul li a{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav_menu li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+/* Inicio Transição Nav-Icon*/
+
+.nav_menu li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_menu li a:hover {
+    color: #31ee50;
+}
+
+/* Fim Transição Nav-Icon*/
+
+#bHome{
+    width: 4%;
+    margin-left: 0%;
+}
+
+/* Inicio Transição Button Light-Mode*/
+#light-mode {
+    padding: 9px 15px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-size: 12px;
+}
+
+#light-mode:hover{
+    background-color:#000000;
+    color: white;
+
+}
+/* Fim Transição Button Light-Mode*/
+
+.nav-icon {
+    width: 16%;
+    margin-bottom: 0%;
+    margin-top: 0;
+    margin-left: 0%;
+    margin-right: 2%;
+}
+
+/* Fim Nav Bar*/
+ 
+/* Inicio Página index*/
+
+#titulo-index {
+    position: absolute;
+    width: 100%;
+    font-size: 80px;
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#titulo-index span{
+    color: #31ee50;
+    margin-top: 0px;
+}
+
+#biglogo{
+    margin-left: 73%;
+    margin-top: 0%;
+    position: absolute;
+    top: 20%;
+}
+
+#text-index {
+    position: absolute;
+    width: 70%;
+    margin-top: 20%;
+    font-size: 25px;
+    top: 10%;
+    margin-left: 20px;
+}
+
+#palavraverde{
+    color: #31ee50;
+}
+/* Fim página index */
+
+/* Formatação de titulos e textos */
+.titulo-principal{
+    font-size: 100px;
+    text-shadow: 8px 8px black;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: #31ee50;
+    background-color: #00000000;
+}
+
+.content-principal {
+    font-size: 25px;
+    width: 45%;
+    margin-left: 5%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#000000;
+    background-color: #00000000;
+}
+
+.content{
+    background-color: rgb(233, 233, 233);
+}
+
+/* INICIO SECTIONS*/
+.section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#section-cartao{
+    background-image: url('/img/background/cartao-green.svg');
+    
+}
+#section-investimento{
+    background-image: url('/img/background/investimento-green.svg');
+
+}
+#section-economia{
+    background-image: url('/img/background/economia-green.svg');
+
+}
+#section-banco{
+    background-image: url('/img/background/banco-green.svg');
+
+}
+#section-indicacoes{
+    background-image: url('/img/background/indicacoes-green.svg');
+}
+#section-sobre{
+    background-image: url('/img/background/sobre-green.svg');
+
+}
+#section-simulador, .input-field, #input-name{
+    background-color: rgb(233, 233, 233);
+}
+/* FIM SECTIONS*/
+.titulo-inicial{
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 0px;
+    text-shadow: 4px 4px black;
+    font-size: 75px;
+    margin-left: 5%;
+    color:#31ee50;
+    background-color: #00000000;
+}
+
+.titulo-secundario{
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 4px;
+    text-shadow: 4px 4px black;
+    font-size: 40px;
+    margin-left: 5%;
+    color:#31ee50;
+    background-color: #00000000;
+    padding-bottom: 1%;
+}
+
+.content-secundario{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 23px;
+    width: 75%;
+    background-color: #00000000;
+    padding-bottom: 1%;
+    
+}
+
+#tabela {
+    margin-top: 3%;
+    background-color: rgb(233, 233, 233);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#tabela #assunto-tabela{
+    font-size: 32px;
+    background-color: rgb(233, 233, 233);
+    padding-right: 0vh;
+    padding-top: 3vh;
+    color: purple;
+    width: 25%;
+    
+
+}
+
+#tabela #content-tabela{
+    padding-top: 3vh;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+
+}
+
+/* Inicio subtitulo e content-subtitulos*/
+
+.subtitulos{
+    font-size: 25px;
+    background-color: #00000000;
+    margin-top: 2%;
+    margin-left: 10%;
+    color: purple;
+    width: 25%;
+}
+
+.content-subtitulos{
+    font-size: 20px;
+    background-color: #00000000;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 75%;
+
+}
+
+/*Fim Subtitulo e content-subtitulos*/
+.content-decoration, #download{
+    margin: 1% 5% 2% 5%; /* superior, direita, inferior e esquerda*/
+    font-size: 25px;
+    color: purple;
+    width: 75%;
+    background-color: #00000000;
+    padding-bottom: 1%;
+}
+
+.download-button{
+    margin-top: 2%;
+    width: 5%;
+    background-color: #00000000;
+}
+
+/* 
+    INICIO SIMULADOR
+*/
+
+#section-simulador{
+    margin-right: 30%;
+    margin-left:  30%;
+    background-color: #262626;
+}
+
+#titulo-simulador{
+    color: #31ee50;
+    padding-bottom: 1%;
+}
+
+#calculator {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #262626;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+    background-color: #262626;
+    
+}
+
+#calculator h2::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: #31ee50;
+    
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6600ff;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field input:focus {
+    outline: none;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#result {
+    text-align: center;
+    background-color: #262626;
+    background-color: #262626;
+}
+
+#total, #resultado {
+    font-size: 40px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#calculate {
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: #6600ff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*
+    FIM SIMULADOR
+*/
+
+
+
+/* Inicio Media query*/
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+/* Fim Media query*/
