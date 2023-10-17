@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafa;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 4px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    list-style: none;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-y:scroll;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Inicio Nav Bar*/
+
+#bHome{
+    width: 3%;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+.logo {
+    width: 100%;
+    cursor: pointer;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: #fffafa;
+
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: #fffafa;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    height: 8vh;
+    background-color: #fffafa;
+
+    
+  }
+  
+
+
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    background-color: #fffafa;
+    
+    
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    margin-top: 10px;
+    background-color: #fffafa;
+    
+    
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+    background-color: #fffafa;    
+    
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #fffafa;
+    margin: 8px;
+    transition: 0.3s;
+    z-index: 10;
+    background-color: #fffafa;
+    
+    
+  }
+  
+  @media (max-width: 999px) {
+    main {
+      overflow-x: hidden;
+      
+      
+      
+      
+    }
+
+
+
+    .nav-list {
+      top: 10vh;
+      right: 0;
+      width: 100%;
+      height: 90vh;
+      background-color: #fffafa;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      position: fixed;
+        
+      
+
+      
+      
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+      
+      
+      
+    }
+    .mobile-menu {
+      display: block;
+      background-color: #000000;
+      margin-left: 60%;
+      margin-right: 2%;
+      border-radius: 100%;
+      
+      
+      
+      
+    }
+
+    nav {
+        margin-bottom: 1%;
+        margin-top: 1%;
+        position: fixed;
+        z-index: 10;
+        
+    }
+
+
+    #bHome {
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+
+    #light-mode {
+        position: static;
+        padding: 175px;
+
+    }
+    .nav-list.active{
+        position: fixed;
+        top: 10%;
+    }
+
+    nav{
+        width: 100%;
+        bottom: 87%;
+        height: 12%;
+    }
+    
+    .biglogo{
+        opacity: 0;
+    }
+
+    #section-economia{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-banco{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-cartao{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-index{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-indicacoes{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-investimento{
+        width: 100%;
+        height: 100%;
+    }
+
+    #section-sobre{
+        width: 100%;
+        height: 100%;
+    }
+
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+    
+    
+  }
+
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+      
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      
+      
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+    
+    
+    
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+    
+    
+    
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    
+    
+  }
+
+  #light-mode {
+    position: static;
+    display: flex;
+    margin-block: auto 20px;
+    padding: 7px 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    font-size: 12px;
+}
+
+#light-mode:hover{
+    background-color:#000000;
+    color: white;
+}
+
+.nav-icon {
+    width: 8%;
+}
+
+#indicacoes {
+    margin-right: 5%;
+}
+
+
+
+/* Fim Navbar */
+ 
+/* Inicio Página index*/
+
+.biglogo{
+    width: 25%;
+    margin-left: 77%;
+    margin-top: -20%;
+}
+
+/* Fim página index */
+
+/* Formatação de titulos e textos */
+.titulo-principal{
+    font-size: 100px;
+    text-shadow: 8px 8px black;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: #31ee50;
+    background-color: #00000000;
+}
+
+.content-principal {
+    display: flex;
+    font-size: 25px;
+    width: 60%;
+    margin-left: 5%;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#000000;
+    background-color: #00000000;
+}
+
+.content{
+    background-color: rgb(233, 233, 233);
+}
+
+/* INICIO SECTIONS*/
+.section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1%;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#section-cartao{
+    background-image: url('/img/background/cartao-green.svg');
+    
+}
+#section-investimento{
+    background-image: url('/img/background/investimento-green.svg');
+
+}
+#section-economia{
+    background-image: url('/img/background/economia-green.svg');
+
+}
+#section-banco{
+  background-image: url('/img/background/banco-green.svg');
+}
+#section-indicacoes{
+    background-image: url('/img/background/indicacoes-green.svg');
+}
+#section-sobre{
+    background-image: url('/img/background/sobre-green.svg');
+
+}
+#section-simulador, .input-field, #input-name{
+    background-color: rgb(233, 233, 233);
+}
+/* FIM SECTIONS*/
+.titulo-h2{
+    width: 75%;
+    margin-top: 4%;
+    margin-bottom: 0px;
+    text-shadow: 4px 4px black;
+    font-size: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    color:#31ee50;
+    background-color: #00000000;
+}
+
+.content-inicial{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    font-size: 23px;
+    width: 75%;
+    background-color: #00000000;
+    padding-bottom: 1%;
+}
+
+.titulo-secundario{
+    width: 75%;
+    margin-top: 4%;
+    text-shadow: 4px 4px black;
+    font-size: 40px;
+    margin-left: 5%;
+    color:#31ee50;
+    background-color: #00000000;
+    padding-bottom: 1%;
+}
+
+.content-secundario{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    font-size: 23px;
+    width: 75%;
+    background-color: #00000000;
+    padding-bottom: 1%;
+    
+}
+
+#tabela {
+    margin-top: 3%;
+    background-color: rgb(233, 233, 233);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#tabela #assunto-tabela{
+    font-size: 32px;
+    background-color: rgb(233, 233, 233);
+    padding-right: 0vh;
+    padding-top: 3vh;
+    color: purple;
+    width: 25%;
+    
+
+}
+
+#tabela #content-tabela{
+    padding-top: 3vh;
+    font-size: 20px;
+    background-color: rgb(233, 233, 233);
+
+}
+
+/* Inicio subtitulo e content-subtitulos*/
+
+.subtitulos{
+    font-size: 25px;
+    background-color: #00000000;
+    margin-top: 2%;
+    margin-left: 10%;
+    color: purple;
+    width: 25%;
+}
+
+.content-subtitulos{
+    font-size: 20px;
+    background-color: #00000000;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 75%;
+
+}
+
+/*Fim Subtitulo e content-subtitulos*/
+.content-decoration, #download{
+    margin: 1% 5% 2% 5%; /* superior, direita, inferior e esquerda*/
+    font-size: 25px;
+    color: purple;
+    width: 75%;
+    background-color: #00000000;
+    padding-bottom: 1%;
+}
+
+.download-button{
+    margin-top: 2%;
+    width: 5%;
+    background-color: #00000000;
+}
+
+/* 
+    INICIO SIMULADOR
+*/
+
+#section-simulador{
+    margin-right: 30%;
+    margin-left:  30%;
+    background-color: #262626;
+}
+
+#titulo-simulador{
+    color: #31ee50;
+    padding-bottom: 1%;
+}
+
+#calculator {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #262626;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+    background-color: #262626;
+    
+}
+
+#calculator h2::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    color: #31ee50;
+    
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6600ff;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+.input-field input:focus {
+    outline: none;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#result {
+    text-align: center;
+    background-color: #262626;
+    background-color: #262626;
+}
+
+#total, #resultado {
+    font-size: 40px;
+    background-color: #262626;
+    color: #31ee50;
+}
+
+#calculate {
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: #6600ff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*
+    FIM SIMULADOR
+*/
+
+
+
+/* Inicio Media query*/
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    
+}
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+/* Fim Media query*/
