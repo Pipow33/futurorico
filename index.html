@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Celke - hide e show</title>
+</head>
+
+<body>
+<main>
+    <section>
+        <h1>Calculadora de Investimentos</h1>
+        <p>Escolha o tipo de investimento:</p>
+        <select id="tipo-investimento">
+            <option value="none">Selecione um tipo de investimento</option>
+            <option value="TESOURO-DIRETO">Tesouro Direto</option>
+            <option value="LCI">LCI</option>
+            <option value="LCA">LCA</option>
+            <option value="CDB">CDB</option>
+        </select>
+        <div id="calculo">
+            <label for="capital-inicial">Quanto você tem para investir agora?</label>
+            <input type="number" id="capital-inicial" step="0.01">
+        
+            <label for="tempo">Quanto tempo (em anos) você pretende retirar seu dinheiro?</label>
+            <input type="number" id="tempo" step="0.01">
+            <button id="botao-calcular">Calcular montante</button>
+        
+        <div id="resultado">
+        <!-- O resultado será exibido aqui -->
+        </div>
+        </div>
+    </section>
+
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
