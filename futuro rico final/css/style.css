@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 576px){
+    .banner-text p{
+
+            margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 576px){
+    .banner-text p{
+
+            margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .banner-text p{
+        margin-left: 20px;
+        max-width: 75%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .banner-text p{
+        margin-left: 20px;
+        width: 60%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .banner-text p{
+        max-width: 80%;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1400px){
+    .banner-text p{
+        max-width: 80%;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/* Menu de navegação */
+
+
+
+
+.nav-item:hover{
+    background-color:#31ee50;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-item:hover{
+    background-color:#31ee50;
+    color: rgb(0, 0, 0);
+}
+
+#home:hover{
+    background-color:#31ee50;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Fim menu de navegação*/
+
+
+/*Página index */
+
+.text-decoration{
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+}
+
+/*Fim index */
+
+/* Inicio das paginas*/
+
+.banner-text{
+    background-image: url('/img/background/banco-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    
+}
+
+.banner-text h1{
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.banner-text p{
+    text-shadow: 2px 3px black;
+    color: #ffffff;
+}
+
+
+
+#titulo-secundario{
+    text-shadow: 2px 3px #31ee50;
+    color: #000000;
+}
+
+.conteudo-pagina{
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 80%;
+}
+
+/* Tabelas */
+
+#titulo-tabela{
+    color: #31ee50;
+    text-shadow: 1px 1px #000000;
+    font-size: 28px;
+}
+
+#conteudo-tabela{
+    font-size: 18px;
+}
+
+/*Decorações Gerais*/
+
+.content-decoration{
+    color: purple;
+    font-weight: bold;
+    
+}
