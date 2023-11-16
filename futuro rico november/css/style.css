@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 575px){
+    #conteudo-banner{
+            margin-left: 20px;
+            max-width: 100%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+
+@media only screen and (min-width: 576px){
+    #conteudo-banner{
+            margin-left: 20px;
+            max-width: 100%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 768px){
+    .banner-text p{
+        margin-left: 20px;
+        max-width: 75%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 992px){
+
+    .banner-text p{
+        margin-left: 20px;
+        width: 60%;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .banner-text p{
+        max-width: 80%;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1400px){
+    .banner-text p{
+        max-width: 80%;
+        margin-left: 20px;
+    }
+
+    .conteudo-principal{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/* Menu de navegação */
+
+.nav-link:hover{
+    color:#31ee50;
+}
+
+.dropdown-item:hover{
+    color:#31ee50;
+}
+
+#home:hover{
+    color:#31ee50;
+}
+
+
+/* Fim menu de navegação*/
+
+
+/*Página index */
+
+.text-decoration{
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+}
+
+/*Fim index */
+
+/* Inicio das paginas*/
+
+
+
+.banner-bg-banco{
+    background-image: url('/img/background/banco-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.banner-bg-cartao{
+    background-image: url('/img/background/cartao-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.banner-bg-economia{
+    background-image: url('/img/background/economia-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.banner-bg-indicacoes{
+    background-image: url('/img/background/indicacoes-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.banner-bg-investimento{
+    background-image: url('/img/background/investimento-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.banner-bg-sobre{
+    background-image: url('/img/background/sobre-green.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+#titulo-banner{
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+#conteudo-banner{
+    text-shadow: 2px 3px black;
+    color: #ffffff;
+    margin-left: 24px;
+    width: 70%;
+}
+
+
+
+#titulo-secundario{
+    text-shadow: 2px 3px #31ee50;
+    color: #000000;
+    margin-top: 60px;
+}
+
+.lead{
+    font-size: 24px;
+    margin-left: 5%;
+}
+
+.display-2{
+    margin-left: 3%;
+}
+
+
+#subtitulo{
+    color: purple;
+    font-size: 48px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+
+
+/* Tabelas */
+
+#titulo-tabela{
+    color: #31ee50;
+    text-shadow: 1px 1px #000000;
+    font-size: 28px;
+}
+
+#conteudo-tabela{
+    font-size: 18px;
+}
+
+#tabela{
+    margin-left: 3%;
+}
+
+/* Simulador */
+
+#section-simulador{
+    margin-right: 30%;
+    margin-left:  30%;
+    background-color: #ffffff;
+}
+
+#titulo-simulador{
+    color: #31ee50;
+    padding-bottom: 1%;
+}
+
+#calculator {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #ffffff;
+}
+
+#calculator h2 {
+    font-size: 30px;
+    position: relative;
+    background-color: #ffffff;
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+    
+}
+
+#calculator h2::before{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 150px;
+    background: var(--linear-gradient);
+    bottom: 5px;
+    background-color: #ffffff;
+    color: #31ee50;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-shadow: 1px 1px black;
+    color: #31ee50;
+    
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    color: #31ee50;
+}
+
+.input-field label {
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #31ee50;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #6600ff;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #31ee50;
+}
+
+.input-field input:focus {
+    outline: none;
+    background-color: #ffffff;
+    color: #31ee50;
+}
+
+#result {
+    text-align: center;
+    background-color: #ffffff;
+    background-color: #ffffff;
+}
+
+#total, #resultado {
+    font-size: 40px;
+    background-color: #ffffff;
+    text-shadow: 2px 3px black;
+    color: #31ee50;
+}
+
+#calculate {
+    background: var(--linear-gradient);
+    border: none;
+    padding: 10px;
+    color: #6600ff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Decorações Gerais*/
+
+.content-decoration{
+    color: purple;
+    font-weight: bold;
+    
+}
+
