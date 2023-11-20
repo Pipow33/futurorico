@@ -61,7 +61,7 @@
 <body>
   <main>
     <div class="banner">
-      <div class="banner-bg-banco">
+      <div class="banner-bg-simulador">
         <h1 class="display-1" id="titulo-banner">SIMULADOR</h1>
           <p class="lead" id="conteudo-banner">Simplificamos o processo para que você tenha uma visão clara de seus resultados. Tome decisões informadas e otimize seus ganhos de maneira prática. Transforme a complexidade financeira em simplicidade com nossa página.</p>
       </div>
@@ -69,10 +69,9 @@
     <section id="section-simulador">
       <main id="container">
           <div id="calculator">
-              <h2 id="titulo-simulador">
-                  Simulador de investimento
+            <h2 id="titulo-simulador" class="display-2"> 
+              Simulador de investimento
               </h2>
-  
               <div id="input_box">
                   <div class="input-field">
                       <label for="ci">Valor Inicial:</label>
@@ -87,7 +86,7 @@
                   Calcular
               </button>
           </div>
-        <h2 id="titulo-secundario">Resultados</h2>
+        <h2 id="titulo-secundario" class="display-2">Resultados</h2>
           
     <section id="resultado">
       <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -117,9 +116,37 @@
             </div>
           </div>
         </div>
-        </div>
-      </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" id="resultado-cdi" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                CDI
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p id="p-totalcdi"></p>
+                <p id="p-lucrocdi"></p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" id="resultado-lca" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  LCA
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p id="p-totallca"></p>
+                  <p id="p-lucrolca"></p>
+                </div>
+              </div>
+            </div>
     </section>
+    <h2 class="display-2" id="titulo-secundario">Avisos:</h2>
+    <p class="lead">Os resultados dessa calculadora são simulações, desconsiderando a TR e o imposto de renda que é cobrado por alguns investimentos. Podendo assim, sofrer divergências causadas por mudanças nas regulamentações e taxas. Portanto, consulte um profissional da área para ver qual a melhor opção para você.</p>
       
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
