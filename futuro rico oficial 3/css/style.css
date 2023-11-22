@@ -15,13 +15,35 @@ html, body{
 }
 
 
-@media only screen and (max-width: 575px){
-    
-    
-    #conteudo-banner{
-            margin-left: 20px;
-            max-width: 100%;
-            font-size: 16px;
+@media (min-width: 576px){
+    .conteudo-banner{
+        font-size: 20px;
+    }
+
+    #index-bg{
+        height: 500vh;
+    }
+}
+
+
+@media (max-width: 768px){
+
+
+    main #corpo-pagina{
+        text-align: center;
+    }
+
+    #titulo-simulador{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 992px){
+
+
+    #conteudo-index{
+        width: 75%;
     }
 
     .conteudo-principal{
@@ -29,214 +51,64 @@ html, body{
         margin-right: 20px;
     }
 
-    #section-simulador{
-        padding-right: 8%;
+    main #corpo-pagina{
+        text-align: center;
     }
-
-    #titulo-simulador{
-        position: absolute;
-        margin-left: -240px;
-
-    }
-
-    #titulo-secundario-simulador{
-        position: relative;
-        margin-left: -80px;
-    }
-
-    #resultado{
-        position: relative;
-        left: 0%;
-    }
-
-    #titulo-aviso{
-        position: relative;
-        margin-left: -20px;
-    }
-
+    
     #avisos{
-        position: relative;
-        width: 30px;
-        margin-left: 0px;
-
+        margin-left: 5%;
+        margin-right: 5%;
     }
-
-}
-
-
-
-@media (max-width: 768px){
-    #conteudo-banner{
-        margin-left: 20px;
-        max-width: 100%;
-        font-size: 16px;
-}
-
-.conteudo-principal{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#section-simulador{
-    padding-right: 8%;
-}
-
-#titulo-simulador{
-    position: absolute;
-    right: 30px;
-
-}
-
-#titulo-secundario-simulador{
-    position: relative;
-    left: 5%;
-}
-
-#resultado{
-    position: relative;
-    left: 0%;
-}
-
-#titulo-aviso{
-    position: relative;
-    left: 35%;
-}
-
-#avisos{
-    position: relative;
-    font-size: 16px;
-    width: 90%;
-}
-}
-
-@media (max-width: 992px){
-
-    #conteudo-banner{
-        margin-left: 20px;
-        max-width: 100%;
-        font-size: 16px;
-}
-
-.conteudo-principal{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#section-simulador{
-    padding-left: 8;
-}
-
-#titulo-simulador{
-    position: absolute;
-    right: 0%;
-}
-
-#titulo-secundario-simulador{
-    position: relative;
-    left: 20%;
-}
-
-#resultado{
-    position: relative;
-    left: 0%;
-}
-
-#titulo-aviso{
-    position: relative;
-    left: 40%;
-}
-
-#avisos{
-    position: relative;
-    font-size: 16px;
-    width: 90%;
-}
 }
 
 @media (max-width: 1200px){
-    #conteudo-banner{
+
+
+    #conteudo-index{
+        width: 60%;
+    }
+
+
+    .conteudo-principal{
         margin-left: 20px;
-        max-width: 100%;
-        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    #titulo-secundario-simulador{
+        text-align: center;
+    }
+
+    #titulo-aviso{
+        text-align: center;
+    }
+
+    #titulo-simulador{
+        text-align: center;
+    }
 }
 
-.conteudo-principal{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+@media (max-width: 1400px){
 
-#section-simulador{
-    padding-left: 8;
-}
-
-#titulo-simulador{
-    position: absolute;
-    left: 15%;
-}
-
-#titulo-secundario-simulador{
-    position: relative;
-    left: 20%;
-}
-
-#resultado{
-    position: relative;
-    left: 0%;
-}
-
-#titulo-aviso{
-    position: relative;
-    left: 38%;
-}
-
-#avisos{
-    position: relative;
-    font-size: 16px;
-    width: 90%;
-}
+    #conteudo-index{
+        width: 60%;
+    }
 }
 
 @media (min-width: 1400px){
-    #conteudo-banner{
+    #index-bg{
+        height: 92.2vh;
+    }
+    #conteudo-index{
+        width: 60%;
+    }
+    main #corpo-pagina{
+        text-align: center;
+    }
+
+    .conteudo-principal{
         margin-left: 20px;
-        max-width: 100%;
-        font-size: 16px;
-}
-
-.conteudo-principal{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#section-simulador{
-    padding-left: 0%;
-}
-
-#titulo-simulador{
-    position: absolute;
-    left: 5%;
-}
-
-#titulo-secundario-simulador{
-    position: relative;
-    left: 30%;
-}
-
-#resultado{
-    position: relative;
-    left: 0%;
-}
-
-#titulo-aviso{
-    position: relative;
-    left: 42%;
-}
-
-#avisos{
-    position: relative;
-    font-size: 16px;
-    width: 90%;
-}
+        margin-right: 20px;
+    }
 }
 /* Menu de navegação */
 
@@ -269,7 +141,7 @@ html, body{
 
 
 
-.banner-bg-banco{
+#banner-bg-banco{
     background-image: url('/img/background/banco-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -278,7 +150,7 @@ html, body{
     
 }
 
-.banner-bg-cartao{
+#banner-bg-cartao{
     background-image: url('/img/background/cartao-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -287,7 +159,7 @@ html, body{
     
 }
 
-.banner-bg-economia{
+#banner-bg-economia{
     background-image: url('/img/background/economia-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -296,7 +168,7 @@ html, body{
     
 }
 
-.banner-bg-indicacoes{
+#banner-bg-indicacoes{
     background-image: url('/img/background/indicacoes-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,7 +177,7 @@ html, body{
     
 }
 
-.banner-bg-investimento{
+#banner-bg-investimento{
     background-image: url('/img/background/investimento-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,13 +190,12 @@ html, body{
     background-image: url('/img/background/index.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+
 
 
 }
 
-.banner-bg-simulador{
+#banner-bg-simulador{
     background-image: url('/img/background/simulador.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -334,7 +205,7 @@ html, body{
 
 
 
-.banner-bg-sobre{
+#banner-bg-sobre{
     background-image: url('/img/background/sobre-green.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -343,23 +214,20 @@ html, body{
     
 }
 
-#titulo-banner{
+.titulo-banner{
     text-shadow: 2px 3px black;
     color: #31ee50;
     margin-left: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding-top: 100px;
     font-weight: 400;
 }
 
-#conteudo-banner{
+.conteudo-banner{
     text-shadow: 2px 3px black;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin-left: 24px;
-    width: 70%;
-    min-width: 15%;
 }
 
 #conteudo-index{
@@ -367,27 +235,18 @@ html, body{
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin-left: 24px;
-    width: 70%;
+
 
 }
 
 
-#titulo-secundario{
+.titulo-secundario{
     text-shadow: 2px 3px #000000;
     color: #31ee50;
     margin-top: 60px;
 }
 
-#titulo-aviso{
-        text-shadow: 2px 3px #000000;
-        color: #31ee50;
-        margin-top: 60px;
-}
-
-
 .lead{
-    font-size: 24px;
     margin-left: 5%;
     font-weight: bold;
     display: block;
@@ -399,9 +258,10 @@ html, body{
 }
 
 
-#subtitulo{
+
+.subtitulo{
     color: purple;
-    font-size: 48px;
+    font-size: 38px;
     margin-left: 3%;
     margin-right: 10%;
     font-weight: bold;
@@ -427,6 +287,7 @@ html, body{
 }
 
 #conteudo-tabela{
+    font-size: 18px;
     margin-left: 5px;
 }
 
@@ -436,31 +297,27 @@ html, body{
     font-size: 28px;
 }
 
-#conteudo-tabela{
-    font-size: 18px;
-}
-
 #tabela{
     margin-left: 3%;
 }
 
 /* Simulador */
 
-#section-simulador{
-    margin-right: 30%;
-    margin-left:  30%;
-    width: 45%;
-    background-color: #ffffff;
-}
-
-#resultado{
-    padding-bottom: 5%;
-}
 #titulo-simulador{
     color: #31ee50;
-    padding-bottom: 5%;
-    padding-left: 0;
+}
 
+#titulo-secundario-simulador{
+    text-shadow: 2px 3px #000000;
+    color: #31ee50;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+#titulo-aviso{
+    text-shadow: 2px 3px #000000;
+    color: #31ee50;
+    margin-top: 60px;
 }
 
 #calculator {
@@ -468,25 +325,22 @@ html, body{
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background-color: #ffffff;
 }
 
-#calculator h2 {
+#calculator h2 #titulo-simulador{
     font-size: 45px;
     width: 100%;
     position: relative;
-    background-color: #ffffff;
     text-shadow: 2px 3px black;
     color: #31ee50;
     
 }
 
-#calculator h2::before{
+#calculator h2 #titulo-simulador::before{
     position: absolute;
     content: '';
     height: 3px;
@@ -556,20 +410,13 @@ html, body{
 
 }
 
-#titulo-secundario-simulador{
-    text-shadow: 2px 3px #000000;
-    color: #31ee50;
-    margin-top: 60px;
-    font-size: 45px;
-}
-
 /*Decorações Gerais*/
 
 .content-decoration{
     color: purple;
     font-weight: bold;
-    margin-left: 5%;
     font-size: 24px;
+    margin-left: 5%;
     
 }
 
@@ -589,11 +436,25 @@ html, body{
 }
 #section-pessoas .display-2, p .lead-pessoas, img{
     display: flex;
+    align-items: center;    
     justify-content: center;
     margin-right: 5%;
     margin-left: 5%;
 }
 
+
 section{
     padding-bottom: 5%;
+}
+
+.desvantagens{
+    text-shadow: 2px 3px #000000;
+    color: rgb(255, 0, 0);
+    margin-top: 60px;
+}
+
+.vantagens{
+    text-shadow: 2px 3px #000000;
+    color: #31ee50;
+    margin-top: 60px;
 }

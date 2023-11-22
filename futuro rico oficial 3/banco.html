@@ -7,96 +7,95 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    <link rel="shortcut icon" href="/img/Logogreenblack.svg" type="image/x-icon" />
 
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-      <img src="img/Logogreenblack.svg" height="36">
-      </a>
-      <a class="navbar-brand" id="home" href="index.html">Futuro Rico</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="banco.html" id="navbar-banco">Banco</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cartao.html">Cartão</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="controle_financeiro.html">Controle Financeiro</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="investimento.html">Investimento</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tipo de investimento
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="renda_fixa.html">Renda Fixa</a>
-              </li>
-              <li><a class="dropdown-item" href="renda_variavel.html">Renda Variável</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="simulador.html">Simulador</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="indicacoes.html">Indicações</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+        <img src="img/Logogreenblack.svg" height="36">
+        </a>
+        <a class="navbar-brand" id="home" href="index.html">Futuro Rico</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="banco.html" id="navbar-banco">Banco</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cartao.html">Cartão</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="controle_financeiro.html">Controle Financeiro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="investimento.html">Investimento</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tipo de investimento
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="renda_fixa.html">Renda Fixa</a>
+                </li>
+                <li><a class="dropdown-item" href="renda_variavel.html">Renda Variável</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="simulador.html">Simulador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indicacoes.html">Indicações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <main>
     <div class="banner">
-      <div class="banner-bg-banco">
-        <h1 class="display-1" id="titulo-banner">BANCO</h1>
-          <p class="lead" id="conteudo-banner">Bancos são instituições financeiras que oferecem uma variedade de serviços, como
+      <div id="banner-bg-banco">
+        <h1 class="display-1 titulo-banner">BANCO</h1>
+        <p class="lead conteudo-banner">Bancos são instituições financeiras que oferecem uma variedade de serviços, como
           depósitos, empréstimos, investimentos e outros produtos financeiros para indivíduos e
           empresas. Eles desempenham um papel importante na gestão do dinheiro, facilitando
           transações, fornecendo crédito e ajudando na alocação de recursos financeiros.</p>
       </div>
     </div>
-    <div class="conteudo-principal" id="conteudo-pagina">
-      <section id="content">
-        <h2 class="display-2" id="titulo-secundario">BANCO DE VAREJO</h2>
-        <p class="lead">Um banco de varejo , também conhecido como banco comercial, é uma instituição
-        financeira que oferece uma variedade de serviços financeiros para indivíduos, famílias e
-        pequenas empresas, é um banco que realiza transações diretamente com os consumidores.
-        Os clientes podem abrir contas correntes e de poupança em um banco de varejo.</p>
-        <h2 class="display-2" id="titulo-secundario">BANCO DIGITAL</h2>
-        <p class="lead">Banco digital é uma instituição financeira que concede a maior parte de seus produtos e
-        serviços de forma online.Nessa situação, você pode acessar sua conta pelo computador ou
-        por um aplicativo no celular.Assim , consegue ver seu extrato bancário e realizar transações
-        financeiras a qualquer momento do dia.
-        Além disso, consegue abrir uma conta, enviar documentos , dados e até resolver problemas
-        com o banco por meio digital, isso é extremamente econômico uma vez que não é
-        necessário se deslocar até uma 
-        agência física , nem usar o telefone, na maioria das vezes.
-        </p>
-        <h2 class="display-2" id="titulo-secundario">BANCO PARA MENORES DE IDADE (-18 ANOS)</h2>
-        <p class="lead">Inter, Nubank, Next e o Original são exemplos de bancos digitais para menores de idades ,
-        ao acessar a conta temos muitas vantagens como investimento ,poupança entre outros
-        benefícios. É importante lembrar que , em geral, para abrir uma conta para menor de 18
-        anos, é necessário estar acompanhado dos pais ou responsáveis legais e apresentar
-        documentos como identidade e CPF.
-        </p>
-        <h2 class="display-2" id="titulo-secundario">BANCOS PARA MAIORES DE IDADE (+18 ANOS)</h2>
-        <p class="lead">A partir dos 18 anos a maior parte dos bancos já aceitam a criação de contas, a escolha de
-        qual banco criar uma conta vai da necessidade e preferência de cada adulto .</p>
-      </section>
+    <div class="conteudo-principal">
+      <h2 class="display-2 titulo-secundario">BANCO DE VAREJO</h2>
+      <p class="lead">Um banco de varejo , também conhecido como banco comercial, é uma instituição
+      financeira que oferece uma variedade de serviços financeiros para indivíduos, famílias e
+      pequenas empresas, é um banco que realiza transações diretamente com os consumidores.
+      Os clientes podem abrir contas correntes e de poupança em um banco de varejo.</p>
+      <h2 class="display-2 titulo-secundario">BANCO DIGITAL</h2>
+      <p class="lead">Banco digital é uma instituição financeira que concede a maior parte de seus produtos e
+      serviços de forma online.Nessa situação, você pode acessar sua conta pelo computador ou
+      por um aplicativo no celular.Assim , consegue ver seu extrato bancário e realizar transações
+      financeiras a qualquer momento do dia.
+      Além disso, consegue abrir uma conta, enviar documentos , dados e até resolver problemas
+      com o banco por meio digital, isso é extremamente econômico uma vez que não é
+      necessário se deslocar até uma 
+      agência física , nem usar o telefone, na maioria das vezes.
+      </p>
+      <h2 class="display-2 titulo-secundario">BANCO PARA MENORES DE IDADE (-18 ANOS)</h2>
+      <p class="lead">Inter, Nubank, Next e o Original são exemplos de bancos digitais para menores de idades ,
+      ao acessar a conta temos muitas vantagens como investimento ,poupança entre outros
+      benefícios. É importante lembrar que , em geral, para abrir uma conta para menor de 18
+      anos, é necessário estar acompanhado dos pais ou responsáveis legais e apresentar
+      documentos como identidade e CPF.
+      </p>
+      <h2 class="display-2 titulo-secundario">BANCOS PARA MAIORES DE IDADE (+18 ANOS)</h2>
+      <p class="lead">A partir dos 18 anos a maior parte dos bancos já aceitam a criação de contas, a escolha de
+      qual banco criar uma conta vai da necessidade e preferência de cada adulto .</p>
     </div>
   </main>
 </body>

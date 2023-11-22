@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+    <link rel="shortcut icon" href="/img/Logogreenblack.svg" type="image/x-icon" />
 
 </head>
 <header>
@@ -61,69 +62,61 @@
 <body>
   <main>
     <div class="banner">
-      <div class="banner-bg-simulador">
-        <h1 class="display-1" id="titulo-banner">SIMULADOR</h1>
-          <p class="lead" id="conteudo-banner">Simplificamos o processo para que você tenha uma visão clara de seus resultados. Tome decisões informadas e otimize seus ganhos de maneira prática. Transforme a complexidade financeira em simplicidade com nossa página.</p>
+      <div id="banner-bg-simulador">
+        <h1 class="display-1 titulo-banner">SIMULADOR</h1>
+        <p class="lead conteudo-banner">Simplificamos o processo para que você tenha uma visão clara de seus resultados. Otimize seus ganhos de maneira prática e transforme a complexidade financeira em simplicidade com nossa página.</p>
       </div>
     </div>
-    <section id="section-simulador">
-      <main id="container">
+    <main id="corpo-pagina">
+      <section id="section-simulador">
+        <main id="container">
           <div id="calculator">
             <h2 id="titulo-simulador" class="display-2"> 
-              Simulador de investimento
-              </h2>
-              <div id="input_box">
-                  <div class="input-field">
-                      <label for="ci">Valor Inicial:</label>
-                      <input type="number" id="ci" placeholder="capital">
-                  </div>
-                  <div class="input-field">
-                      <label for="t">Tempo de investimento?:</label>
-                      <input type="number" id="t" placeholder="anos">
-                  </div>
+              Simulador de investimento</h2>
+            <div id="input_box">
+              <div class="input-field">
+                <label for="ci">Valor Inicial:</label>
+                <input type="number" id="ci" placeholder="capital">
               </div>
-              <button id="calculate">
-                  Calcular
-              </button>
-          </div>
-        <h2 id="titulo-secundario-simulador" class="display-2">Resultados</h2>
-      </main>
-    </section>
-    <section id="resultado">
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" id="resultado-p" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Poupança
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p id="p-totalp"></p>
-              <p id="p-lucrop"></p>
+              <div class="input-field">
+                <label for="t">Tempo de investimento?:</label>
+                <input type="number" id="t" placeholder="anos">
+              </div>
             </div>
+            <button id="calculate">Calcular</button>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" id="resultado-td" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Tesouro Direto SELIC
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              <p id="p-totaltd"></p>
-              <p id="p-lucrotd"></p>
+          <h2 id="titulo-secundario-simulador" class="display-2">Resultados</h2>
+        </main>
+      </section>
+      <section id="resultado">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" id="resultado-p" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Poupança </button> </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p id="p-totalp"></p>
+                <p id="p-lucrop"></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" id="resultado-cdi" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                CDI
-              </button>
-            </h2>
+            <button class="accordion-button collapsed" id="resultado-td" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Tesouro Direto Selic </button> </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p id="p-totaltd"></p>
+                <p id="p-lucrotd"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" id="resultado-cdi" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> CDI</button> </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
                 <p id="p-totalcdi"></p>
@@ -131,26 +124,25 @@
               </div>
             </div>
           </div>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" id="resultado-lca" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  LCA
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <p id="p-totallca"></p>
-                  <p id="p-lucrolca"></p>
-                </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" id="resultado-lca" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">LCA</button> </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p id="p-totallca"></p>
+                <p id="p-lucrolca"></p>
               </div>
             </div>
-    </section>
-    <h2 class="display-2" id="titulo-aviso">Avisos:</h2>
-    <p class="lead" id="avisos">Os resultados dessa calculadora são simulações, desconsiderando a TR e o imposto de renda que é cobrado por alguns investimentos. Podendo assim, sofrer divergências causadas por mudanças nas regulamentações e taxas. Portanto, consulte um profissional da área para ver qual a melhor opção para você.</p>
-      
+          </div>
+        </div>
+      </section>
+      <h2 class="display-2" id="titulo-aviso">Avisos:</h2>
+      <p class="lead" id="avisos">Os resultados dessa calculadora são simulações, desconsiderando a TR e o imposto de renda que é cobrado por alguns investimentos. Podendo assim, sofrer divergências causadas por mudanças nas regulamentações e taxas. Portanto, consulte um profissional da área para ver qual a melhor opção para você.</p>
+    </main>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
