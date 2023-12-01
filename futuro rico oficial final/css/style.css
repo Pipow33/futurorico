@@ -14,20 +14,20 @@ html, body{
     
 }
 
-
-@media (min-width: 576px){
+@media (max-width: 576px){
     .conteudo-banner{
         font-size: 20px;
     }
 
-    #index-bg{
-        height: 500vh;
+
+    .row{
+        text-align: center;
     }
+
 }
 
 
 @media (max-width: 768px){
-
 
     main #corpo-pagina{
         text-align: center;
@@ -36,15 +36,15 @@ html, body{
     #titulo-simulador{
         text-align: center;
     }
+    .row{
+        text-align: center;
+    }
 
 }
 
 @media (max-width: 992px){
 
 
-    #conteudo-index{
-        width: 75%;
-    }
 
     .conteudo-principal{
         margin-left: 20px;
@@ -59,10 +59,15 @@ html, body{
         margin-left: 5%;
         margin-right: 5%;
     }
+    .row{
+        text-align: center;
+    }
 }
 
 @media (max-width: 1200px){
-
+    #index-bg{
+        height: 200vh;
+    }
 
     #conteudo-index{
         width: 60%;
@@ -85,12 +90,28 @@ html, body{
     #titulo-simulador{
         text-align: center;
     }
+    .row{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1400px){
 
     #conteudo-index{
         width: 60%;
+        height: 40vh;
+    }
+
+    main #corpo-pagina{
+        text-align: center;
+    }
+
+    .row{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -304,6 +325,7 @@ html, body{
 /* Simulador */
 
 #titulo-simulador{
+    text-shadow: 2px 3px black; 
     color: #31ee50;
 }
 
@@ -406,7 +428,13 @@ html, body{
 }
 
 #p-lucrop, #p-lucrotd, #p-lucrocdi, #p-lucrolca{
-    color: #31ee50;
+    color: rgb(2, 136, 2);
+    font-size: 26px;
+
+}
+
+#p-totalp, #p-totaltd, #p-totalcdi, #p-totallca{
+    font-size: 23px;
 
 }
 
@@ -457,10 +485,5 @@ section{
     text-shadow: 2px 3px #000000;
     color: #31ee50;
     margin-top: 60px;
-}
-
-.row{
-    width: 320vh;
-    text-align: center;
 }
 
