@@ -1,0 +1,13 @@
+:root{
+    --color-background: #21181C;
+    --color-white: #ffffff;
+    --color-purple: #67239E;
+}
+
+p{
+    font-size: 28px;
+}
+
+h2, h3{
+    font-size: 30px;
+}
