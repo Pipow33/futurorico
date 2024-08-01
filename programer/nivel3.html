@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programer-Nível 2</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="/assets/css/nivel2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="/assets/img/logo/programer_logo_white_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Programer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/estudo.html">Material de Estudo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/nivel1.html">Jogar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div id="game-board">
+    <img src="assets/img/nivel3/cenario.png" id="camada1">
+    </div>
+
+    <div id="editor">
+        <div id="objetivo">
+            <h1>Abra a porta</h1>
+            <p>Para abrir passagem será necessário uma função que retorne os "dados" de segurança da porta nulos, ou seja, zerado.</p>
+        </div>
+        <div id="codigo">
+            <div id="csscodigo">
+                <ol>
+                    <li>
+                        <p><span>dados = [12,32,21]</span></p>
+                    </li>
+
+                    <li>
+                        <p><span>def hackear(x):</span></p>
+                    </li>
+                    <li>
+                        <p><span></span> <input type="text" id="primeiralinha" placeholder="retornar o valor"></p>
+                    </li>
+
+                    <li>
+                        <p><span></span></p>
+                        <input type="text" id="quartalinha" placeholder="chame a função">
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="botaoeditor">
+            <button onclick="verificar()" id="executar">Executar</button>
+            <button onclick="goToMenu()" id="menu">Voltar para o Menu</button>
+            <button onclick="goToMenu()" id="next_level">Prosseguir</button><br>
+            <p id="mensagem"></p>
+        </div>
+
+
+
+        <script>
+            function verificar() {
+                var respostaPrimeiraLinha = document.getElementById('primeiralinha').value.trim().toLowerCase().replace(/\s/g, '');
+                var respostaQuartaLinha = document.getElementById('quartalinha').value.trim().toLowerCase().replace(/\s/g, '');
+
+                var respostaCorretaPrimeiraLinha = "return x * 0".toLowerCase().replace(/\s/g, '');
+                var respostaCorretaQuartaLinha = "hackear(dados)".toLowerCase().replace(/\s/g, '');
+
+                if (
+                    respostaPrimeiraLinha === respostaCorretaPrimeiraLinha &&
+                    respostaQuartaLinha === respostaCorretaQuartaLinha
+                ) {
+                    document.getElementById('mensagem').innerHTML = 'Parabéns! Suas respostas estão corretas.';
+                    document.getElementById('mensagem').style.color = 'green';
+                    //Fazendo o botão prosseguir aparecer e o outro desaparecer
+                    document.getElementById('next_level').style.display = 'inline';
+
+                    //Fazendo a porta se abrir
+                    var image = document.getElementById('camada1');
+                    image.src = '/assets/img/nivel3/cenario2.png';
+
+                } else {
+                    document.getElementById('mensagem').innerHTML = 'Tente novamente. Suas respostas estão incorretas.';
+                    var image = document.getElementById('camada1');
+                    image.src = '/assets/img/nivel3/cenario.png';
+                    document.getElementById('mensagem').style.color = 'red';
+                }
+            }
+
+
+
+            function goToMenu() {
+                window.location.href = 'index.html';
+            }
+            // function nextlevel(){
+            //     window.location.href ='nivel3.html';
+            // }
+        </script>
+     <script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

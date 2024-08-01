@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programer-Nível1</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="/assets/css/nivel1_copy.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="/assets/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="/assets/img/logo/programer_logo_white_transparent.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Programer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="estudo.html">Material de Estudo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nivel1.html">Jogar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div id="game-board">
+        <img src="/assets/img/nivel1/fundo_nivel1.png" id="camada1">
+        <img src="/assets/img/nivel1/predios.png" id="camada2">
+        <img src="/assets/img/nivel1/plataformas.png" id="plataformas">
+        <img src="/assets/img/objetos/personagem_v1.png" id="personagem">
+        <img src="/assets/img/objetos/moto.png" id="moto">
+    </div>
+    <!-- <img src="imagens/nivel1/grafico_nivel1.png" id="grafico"> -->
+
+    <div class="border border-white" id="editor">
+        <h1 class="display-6">Ajude o herói a chegar na moto</h1>
+        <p class="lead">O herói precisa da sua ajuda para chegar até o outro edifício, para isso voce pode programar uma escada em python para ajuda-lo a concluir o objetivo! <br>Coloque o resto do código: </p>
+        <form class="form-floating" id="codigo">
+            <!--Primeira questão-->
+            <ol>
+            <li>
+            <p class="fs-6" id="teste">import</p>
+            <input type="text" class="form-control naoRespondida"  id="floatingInputValue" name="primeralinha" placeholder="Coloque o resto do código">
+            </li>
+            </ol>
+            <!--JÁ PREENCHIDA-->
+            <ol>
+            <li>
+            <input class="form-control respostaPreenchida" type="text" value="plataforma = ['plataforma1', 'plataforma2', 'plataforma4', 'plataforma5','plataforma5', 'plataforma6']'" aria-label="Disabled input example" disabled readonly>
+            <!--Segunda questão-->
+            </li>  
+            </ol>
+            <ol>
+            <li>
+              <input type="text" id="terceiralinha" placeholder="segunda coluna">
+              <p><span>= [34, 68, 102, 136, 170, 204]</span></p>
+            </li>
+            </ol>
+            <!--Terceira Questão-->
+            <p class="fs-6">plt.</p>
+            <input type="text" class="form-control naoRespondida" id="floatingInputValue" name="primeralinha" placeholder="Coloque o resto do código">
+          </form>
+          <div id="botaoeditor">
+            <button onclick="verificar()" id="executar">Executar</button>
+            <button onclick="goToMenu()" id="menu">Voltar para o Menu</button>
+            <button onclick="nextlevel()" id="next_level">Prosseguir</button><br>
+            <p id="mensagem"></p>
+        </div>
+    </div>
+        
+
+
+
+        <script>
+
+            function verificar() {
+                var respostas = document.getElementById('floatingInputValue').value;
+                
+                var respostasCorretas = ["matplotlib.pyplot as plt", "altura", "bar"]
+
+                if(respostas != respostasCorretas[0]){
+                    console.log("Erro")
+                }
+                else{
+                    console.log("Correto")
+                    
+                }
+            
+            }
+            
+            
+
+
+
+
+
+            // function verificar() {
+            //     var respostaPrimeiraLinha = document.getElementById('primeiralinha').value.trim().toLowerCase().replace(/\s/g, '');
+            //     var respostaTerceiraLinha = document.getElementById('terceiralinha').value.trim().toLowerCase().replace(/\s/g, '');
+            //     var respostaQuartaLinha = document.getElementById('quartalinha').value.trim().toLowerCase().replace(/\s/g, '');
+
+            //     var respostaCorretaPrimeiraLinha = "matplotlib.pyplot as plt".toLowerCase().replace(/\s/g, '');
+            //     var respostaCorretaTerceiraLinha = "altura".toLowerCase().replace(/\s/g, '');
+            //     var respostaCorretaQuartaLinha = "bar".toLowerCase().replace(/\s/g, '');
+
+            //     if (
+            //         respostaPrimeiraLinha === respostaCorretaPrimeiraLinha &&
+            //         respostaTerceiraLinha === respostaCorretaTerceiraLinha &&
+            //         respostaQuartaLinha === respostaCorretaQuartaLinha
+            //     ) {
+            //         document.getElementById('mensagem').innerHTML = 'Parabéns! Suas respostas estão corretas.';
+            //         document.getElementById('mensagem').style.color = 'green';
+            //         document.getElementById('plataformas').style.display ='block';
+            //         document.getElementById('plataformas').style.animation ='plataformas 2000ms';
+            //         //Fazendo o botão prosseguir aparecer e o outro desaparecer
+            //         document.getElementById('next_level').style.display = 'inline';
+            //     } else {
+            //         document.getElementById('mensagem').innerHTML = 'Tente novamente. Suas respostas estão incorretas.';
+            //         document.getElementById('mensagem').style.color = 'red';
+            //         document.getElementById('plataformas').style.display = 'none';
+            //     }
+            // }
+        </script>
+    <script src="/assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
